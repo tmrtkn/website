@@ -14,6 +14,7 @@ var proc;
 
 var ffmpeg = require('fluent-ffmpeg');
 
+/*
 var command = ffmpeg("/dev/v4l/by-id/usb-046d_0825_6CE4C560-video-index0")
     .inputOptions('-r 24')
     .on('start', function(commandLine) {
@@ -23,7 +24,7 @@ var command = ffmpeg("/dev/v4l/by-id/usb-046d_0825_6CE4C560-video-index0")
         console.log('Ending ffmpeg: ' + d);
     })
     .pipe(outStream, { end: true});
-
+*/
 // ["-y", "-f", "video4linux2", "-i", "/dev/v4l/by-id/usb-046d_0825_6CE4C560-video-index0", "-update", "1", "-r", "1", "/var/www/test/testffmpeg.jpeg"];
 
 
