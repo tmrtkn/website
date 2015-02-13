@@ -1,0 +1,22 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Test web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "TM",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.2",
+    "express3-handlebars": "^0.5.2",
+    "fluent-ffmpeg": "^2.0.0-rc3",
+    "socket.io": "^1.3.3"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "mocha": "^2.0.1"
+  }
+}
