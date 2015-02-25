@@ -12,7 +12,7 @@ var dns = require('dns');
 var spawn = require('child_process').spawn;
 var proc;
 
-var ffmpeg = require('fluent-ffmpeg');
+//var ffmpeg = require('fluent-ffmpeg');
 
 /*
 var command = ffmpeg("/dev/v4l/by-id/usb-046d_0825_6CE4C560-video-index0")
@@ -141,7 +141,7 @@ function startStreaming(io) {
     }
 
     //var args = ["-w", "640", "-h", "480", "-o", "./stream/image_stream.jpg", "-t", "999999999", "-tl", "100"];
-    var args2 = ["-y", "-f", "video4linux2", "-i", "/dev/v4l/by-id/usb-046d_0825_6CE4C560-video-index0", "-update", "1", "-r", "1", "/var/www/test/testffmpeg.jpeg"];
+    var args2 = ["-y", "-f", "video4linux2", "-i", "/dev/video0", "-update", "1", "-r", "1", "/var/www/test/testffmpeg.jpeg"];
 
     //proc = spawn('raspistill', args);
     proc = spawn('ffmpeg', args2); 
